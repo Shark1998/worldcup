@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+  <div class="row align-items-center h-100 m-5">
+    <div class="container h-100 w-100 p-4">
+      <div class="help">
+      <!-- Help text begin -->
+<div class="row align-items-center m-2">
+    <div class="list-group align-items-center mx-auto">
+      <a href="help" class="list-group-item list-group-item-action">
+        Главная страница
+      </a>
+      <a href="help" class="list-group-item list-group-item-action">
+        Содержание справки
+      </a>
+      <a href="helpevents" class="list-group-item list-group-item-action">Финалы чемпионата мира по футболу</a>
+      <a href="helpvenues" class="list-group-item active">Места проведения</a>
+      <a href="helpcountries" class="list-group-item list-group-item-action">Принимавшие страны</a>
+    </div>
+</div>
+
+<p>
+    На вкладке "Места проведения" по футболу отображаются такие данные: «событие», «название», «размер», «вместимость», «фото».<br>
+    В колонке «событие»  будет отображаться название мероприятия.<br>
+    В колонке «название» будет отображаться стадион на котором будет проведен матч.<br>
+    В колонке «размер» будет отображаться размер стадиона.<br>
+    В колонке «вместимость» будет отображаться количество вмещающихся человек на которое рассчитан стадион.<br>
+    В колонке «фото» будет изображение самого стадиона.<br>
+</p>
+      
+      <!-- Help text end end -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

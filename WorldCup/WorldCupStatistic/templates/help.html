@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+  <div class="row align-items-center h-100 m-5">
+    <div class="container h-100 w-100 p-4">
+      <div class="help">
+      <!-- Help text begin -->
+<div class="row align-items-center m-2">
+    <div class="list-group align-items-center mx-auto">
+      <a href="help" class="list-group-item list-group-item-action">
+        Главная страница
+      </a>
+      <a href="help" class="list-group-item active">
+        Содержание справки
+      </a>
+      <a href="helpevents" class="list-group-item list-group-item-action">Финалы чемпионата мира по футболу</a>
+      <a href="helpvenues" class="list-group-item list-group-item-action">Места проведения</a>
+      <a href="helpcountries" class="list-group-item list-group-item-action">Принимавшие страны</a>
+    </div>
+</div>
+
+
+<p>В левом верхнем углу находится три вкладки: «Финалы чемпионата мира по футболу», «места проведения», «принимавшие стороны». Переходя по ним вы посетите соответствующие разделы сайта. </p>
+<img alt="Вкладки" src="{% static 'images/вкладки.png' %}"><br><br>
+
+<p>На каждой странце находится таблица с данными. В ней будут отображаться актуальные данные по конкретным параметрам.</p>
+<img alt="Вкладки" width="100%" src="{% static 'images/таблица.png' %}"><br><br>
+
+
+<p class="text-info">
+    Текущую справку можно вызвать с помощью клавиши H, упоминание об этом также находится в правом верхнем углу сайта.
+</p>
+    <img alt="Подсказка" src="{% static 'images/подсказка.png' %}">
+    
+      
+      <!-- Help text end end -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
