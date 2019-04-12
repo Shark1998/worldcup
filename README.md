@@ -1,0 +1,2 @@
+# worldcup
+my django project
